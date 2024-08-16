@@ -1,5 +1,5 @@
 const express = require('express')
-const movies = require('./Movies/movies.json')
+const movies = require('./movies.json')
 const crypto = require('node:crypto')
 const cors = require('cors')
 const { validateMovie, validatePartialMovie } = require('./validateMovies.js')
