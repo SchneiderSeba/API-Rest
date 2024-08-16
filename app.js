@@ -1,13 +1,16 @@
-const express = require('express')
+import express, { json } from 'express'
+import { randomUUID } from 'node:crypto'
+import cors from 'cors'
+import { validateMovie, validatePartialMovie } from './validateMovies.js'
+import ACCEPTED_ORIGIN from './originAccepted.js'
+import { createRequire } from 'node:module'
+
+const require = createRequire(import.meta.url)
 const movies = require('./movies.json')
-const crypto = require('node:crypto')
-const cors = require('cors')
-const { validateMovie, validatePartialMovie } = require('./validateMovies.js')
-const { ACCEPTED_ORIGIN } = require('./originAccepted.js')
 
 const app = express()
 
-app.use(express.json())
+app.use(json())
 app.use(cors({
   origin: (origin, callback) => {
     if (ACCEPTED_ORIGIN.includes(origin)) {
@@ -55,7 +58,7 @@ app.post('/movies', (req, res) => {
     return res.status(422).json({ error: JSON.parse(result.error.message) })
   }
   const newMovie = {
-    id: crypto.randomUUID(),
+    id: randomUUID(),
     ...result.data
   }
   movies.push(newMovie)

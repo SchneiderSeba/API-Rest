@@ -3,4 +3,4 @@ const ACCEPTED_ORIGIN = [
   'http://localhost:8080'
 ]
 
-module.exports = { ACCEPTED_ORIGIN }
+export default ACCEPTED_ORIGIN
