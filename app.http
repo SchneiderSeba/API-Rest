@@ -1,0 +1,35 @@
+### GET ALL MOVIES
+GET http://localhost:3000/movies
+
+### GET MOVIE BY ID
+GET http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### GET MOVIE BY GENRE
+GET http://localhost:3000/movies?genre=action
+
+### POST A NEW MOVIE
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "The Godfather",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "poster": "https://i.ebayimg.com/images/g/u-kAAOSw8w1joXP/",
+    "genre": ["Crime", "Drama", "Action"],
+    "rate": 9.2
+}
+
+### UPDATE MOVIE BY ID
+
+PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "year": 1900
+}
+
+
+
