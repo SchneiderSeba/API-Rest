@@ -1,4 +1,5 @@
 import { MongoClient, ObjectId, ServerApiVersion } from 'mongodb'
+// env
 import 'dotenv/config'
 // const uri = 'mongodb+srv://seba19sc:OomQifbleNvAduCo@moviesapirest.xdwlu.mongodb.net/?retryWrites=true&w=majority&appName=MoviesAPIRest'
 const uri = process.env.MONGODB_URI
