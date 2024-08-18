@@ -1,6 +1,6 @@
 import { MongoClient, ObjectId, ServerApiVersion } from 'mongodb'
 // const uri = 'mongodb+srv://seba19sc:OomQifbleNvAduCo@moviesapirest.xdwlu.mongodb.net/?retryWrites=true&w=majority&appName=MoviesAPIRest'
-const uri = 'mongodb+srv://seba19sc:FkCeXMdKp0QCmZDM@moviesapirest.xdwlu.mongodb.net/?retryWrites=true&w=majority&tls=true&ssl=true'
+const uri = 'mongodb+srv://seba19sc:FkCeXMdKp0QCmZDM@moviesapirest.xdwlu.mongodb.net/?retryWrites=true&w=majority&tlsInsecure=true'
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
