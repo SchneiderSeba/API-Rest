@@ -3,9 +3,9 @@ import { MoviesController } from '../Controllers/movies.js'
 
 export const movieRouter = Router()
 
-movieRouter.get('/:id', MoviesController.getById)
-
 movieRouter.get('/', MoviesController.getAll)
+
+movieRouter.get('/:id', MoviesController.getById)
 
 movieRouter.post('/', MoviesController.create)
 

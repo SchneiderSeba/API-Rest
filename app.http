@@ -24,12 +24,15 @@ Content-Type: application/json
 
 ### UPDATE MOVIE BY ID
 
-PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH http://localhost:3000/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
 Content-Type: application/json
 
 {
     "year": 1900
 }
 
+### DELETE MOVIE BY ID
+
+DELETE http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 
 
