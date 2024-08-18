@@ -7,12 +7,6 @@ movieRouter.get('/:id', MoviesController.getById)
 
 movieRouter.get('/', MoviesController.getAll)
 
-// const origin = req.header('origin')
-
-// if (ACCEPTED_ORIGIN.includes(origin) || !origin) {
-//   res.header('Access-Control-Allow-Origin', origin)
-// }
-
 movieRouter.post('/', MoviesController.create)
 
 movieRouter.patch('/:id', MoviesController.update)
