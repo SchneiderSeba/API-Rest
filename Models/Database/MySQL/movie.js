@@ -8,7 +8,11 @@ const config = {
   user: DB_USER,
   port: DB_PORT,
   password: DB_PASSWORD,
-  database: DB_NAME
+  database: DB_NAME,
+  connectTimeout: 10000,
+  ssl: {
+    rejectUnauthorized: false
+  }
 }
 
 const connection = await mysql.createConnection(config)
