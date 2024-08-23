@@ -1,4 +1,5 @@
-import { MovieModel } from '../Models/Database/MongoDB/movie.js'
+// import { MovieModel } from '../Models/Database/MongoDB/movie.js'
+import { MovieModel } from '../Models/Database/MySQL/movie.js'
 import { validateMovie, validatePartialMovie } from '../validateMovies.js'
 
 export class MoviesController {

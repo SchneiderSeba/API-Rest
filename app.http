@@ -2,30 +2,29 @@
 GET http://localhost:3000/movies
 
 ### GET MOVIE BY ID
-GET http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+GET http://localhost:3000/movies/061bc6e8-616c-11ef-b766-7cd30a82d48b
 
 ### GET MOVIE BY GENRE
-GET http://localhost:3000/movies?genre=action
+GET http://localhost:3000/movies?genre=Drama
 
 ### POST A NEW MOVIE
-
 POST http://localhost:3000/movies
 Content-Type: application/json
 
   {
-    "id": "5ad1a235-0d9c-410a-b32b-220d91689a08",
-    "title": "Inception",
-    "year": 2010,
+    "title": "The Prestige",
+    "year": 2006,
     "director": "Christopher Nolan",
-    "duration": 148,
-    "poster": "https://m.media-amazon.com/images/I/91Rc8cAmnAL._AC_UF1000,1000_QL80_.jpg",
-    "genre": ["Action", "Adventure", "Sci-Fi"],
-    "rate": 8.8
+    "duration": 130,
+    "poster": "https://i.pinimg.com/564x/cc/95/79/cc95794114a7c07872c96338778d3bf9.jpg",
+    "genre": ["Drama", "Mystery", "Thriller"],
+    "rate": 8.5
   }
+
 
 ### UPDATE MOVIE BY ID
 
-PATCH http://localhost:3000/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+PATCH http://localhost:3000/movies/6b2b94fb-6174-11ef-b766-7cd30a82d48b
 Content-Type: application/json
 
 {
@@ -34,6 +33,6 @@ Content-Type: application/json
 
 ### DELETE MOVIE BY ID
 
-DELETE http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+DELETE http://localhost:3000/movies/5bab9c92-617c-11ef-b766-7cd30a82d48b
 
 
