@@ -1,19 +1,14 @@
 // env
 import 'dotenv/config'
 import mysql from 'mysql2/promise'
-
-const HOST = process.env.DB_HOST || '127.0.0.1'
-const PORT = process.env.DB_PORT || 3306
-const USER = process.env.DB_USER || 'root'
-const PASSWORD = process.env.DB_PASSWORD || ''
-const DATABASE = process.env.DB_NAME || 'MoviesDB'
+import { DB_HOST, DB_NAME, DB_PASSWORD, DB_PORT, DB_USER } from '../../../config.js'
 
 const config = {
-  host: HOST,
-  user: USER,
-  port: PORT,
-  password: PASSWORD,
-  database: DATABASE
+  host: DB_HOST,
+  user: DB_USER,
+  port: DB_PORT,
+  password: DB_PASSWORD,
+  database: DB_NAME
 }
 
 const connection = await mysql.createConnection(config)
