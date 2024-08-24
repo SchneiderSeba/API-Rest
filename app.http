@@ -1,11 +1,28 @@
 ### GET ALL MOVIES
 GET http://localhost:3000/movies
 
+### GET ALL MOVIES online
+GET https://pretty-reverence-production.up.railway.app/movies
+
+
+
 ### GET MOVIE BY ID
-GET http://localhost:3000/movies/061bc6e8-616c-11ef-b766-7cd30a82d48b
+GET http://localhost:3000/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
+
+### GET MOVIE BY ID online
+GET https://pretty-reverence-production.up.railway.app/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
+
+
+
 
 ### GET MOVIE BY GENRE
 GET http://localhost:3000/movies?genre=Drama
+
+### GET MOVIE BY GENRE online
+GET https://pretty-reverence-production.up.railway.app/movies?genre=Drama
+
+
+
 
 ### POST A NEW MOVIE
 POST http://localhost:3000/movies
@@ -22,15 +39,47 @@ Content-Type: application/json
   }
 
 
+### POST A NEW MOVIE online
+POST https://pretty-reverence-production.up.railway.app/movies
+Content-Type: application/json
+
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "director": "Christopher Nolan",
+    "duration": 130,
+    "poster": "https://i.pinimg.com/564x/cc/95/79/cc95794114a7c07872c96338778d3bf9.jpg",
+    "genre": ["Drama", "Mystery", "Thriller"],
+    "rate": 8.5
+  }
+
+
+
+
 ### UPDATE MOVIE BY ID
-PATCH http://localhost:3000/movies/6b2b94fb-6174-11ef-b766-7cd30a82d48b
+PATCH http://localhost:3000/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
 Content-Type: application/json
 
 {
     "year": 1900
 }
 
+### UPDATE MOVIE BY ID online
+PATCH https://pretty-reverence-production.up.railway.app/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
+Content-Type: application/json
+
+{
+    "year": 1900
+}
+
+
+
+
+
 ### DELETE MOVIE BY ID
-DELETE http://localhost:3000/movies/5bab9c92-617c-11ef-b766-7cd30a82d48b
+DELETE http://localhost:3000/movies/d2084a07-622e-11ef-9eb1-7cd30a82d48b
+
+### DELETE MOVIE BY ID online
+DELETE https://pretty-reverence-production.up.railway.app/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
 
 

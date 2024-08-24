@@ -101,8 +101,25 @@ export class MovieModel {
   }
 
   static async delete ({ id }) {
-    const [result] = await connection.query('DELETE FROM Movies WHERE id = UUID_TO_BIN(?);', [id])
-    return result
+    if (!id) {
+      throw new Error('El ID es obligatorio')
+    }
+
+    try {
+      // Ejecuta la consulta DELETE en la base de datos
+      const [result] = await connection.query('DELETE FROM Movies WHERE id = UUID_TO_BIN(?);', [id])
+
+      // Verifica si se realizó alguna eliminación
+      if (result.affectedRows === 0) {
+        throw new Error('No se encontró ninguna película con ese ID')
+      }
+
+      return result
+    } catch (error) {
+      // Maneja y propaga el error
+      console.error('Error al eliminar la película:', error.message)
+      throw error
+    }
   }
 
   static async update ({ id, input }) {
