@@ -20,7 +20,7 @@ CREATE TABLE genre (
 );
 
 CREATE TABLE Movies_genre (
-	movie_id BINARY(16) REFERENCES Movie(id),
+	movie_id BINARY(16) REFERENCES Movies(id),
     genre_id INT REFERENCES genre(id),
     PRIMARY KEY (movie_id, genre_id)
 );
