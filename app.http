@@ -2,7 +2,7 @@
 GET http://localhost:3000/movies
 
 ### GET ALL MOVIES online
-GET https://pretty-reverence-production.up.railway.app/movies
+GET https://moviesapi-rest.up.railway.app/movies
 
 
 
@@ -10,7 +10,7 @@ GET https://pretty-reverence-production.up.railway.app/movies
 GET http://localhost:3000/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
 
 ### GET MOVIE BY ID online
-GET https://pretty-reverence-production.up.railway.app/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
+GET https://moviesapi-rest.up.railway.app/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
 
 
 
@@ -19,7 +19,7 @@ GET https://pretty-reverence-production.up.railway.app/movies/cf7cc8be-622f-11ef
 GET http://localhost:3000/movies?genre=Drama
 
 ### GET MOVIE BY GENRE online
-GET https://pretty-reverence-production.up.railway.app/movies?genre=Drama
+GET https://moviesapi-rest.up.railway.app/movies?genre=Drama
 
 
 
@@ -40,17 +40,17 @@ Content-Type: application/json
 
 
 ### POST A NEW MOVIE online
-POST https://pretty-reverence-production.up.railway.app/movies
+POST https://moviesapi-rest.up.railway.app/movies
 Content-Type: application/json
 
   {
-    "title": "The Prestige",
-    "year": 2006,
-    "director": "Christopher Nolan",
-    "duration": 130,
-    "poster": "https://i.pinimg.com/564x/cc/95/79/cc95794114a7c07872c96338778d3bf9.jpg",
-    "genre": ["Drama", "Mystery", "Thriller"],
-    "rate": 8.5
+    "title": "The Godfather",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "poster": "https://i.ebayimg.com/images/g/u-kAAOSw8w1joXP/",
+    "genre": ["Crime", "Drama", "Action"],
+    "rate": 9.2 
   }
 
 
@@ -61,15 +61,15 @@ PATCH http://localhost:3000/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
 Content-Type: application/json
 
 {
-    "year": 1900
+    "poster": "https://i.pinimg.com/564x/11/99/dc/1199dc6273680f175fd9b06c9c36d08a.jpg"
 }
 
 ### UPDATE MOVIE BY ID online
-PATCH https://pretty-reverence-production.up.railway.app/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
+PATCH https://moviesapi-rest.up.railway.app/movies/926e38f6-6233-11ef-a0a8-a2aa5758d06e
 Content-Type: application/json
 
 {
-    "year": 1900
+    "poster": "https://i.pinimg.com/564x/11/99/dc/1199dc6273680f175fd9b06c9c36d08a.jpg"
 }
 
 
@@ -80,6 +80,6 @@ Content-Type: application/json
 DELETE http://localhost:3000/movies/d2084a07-622e-11ef-9eb1-7cd30a82d48b
 
 ### DELETE MOVIE BY ID online
-DELETE https://pretty-reverence-production.up.railway.app/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
+DELETE https://moviesapi-rest.up.railway.app/movies/cf7cc8be-622f-11ef-a0a8-a2aa5758d06e
 
 
