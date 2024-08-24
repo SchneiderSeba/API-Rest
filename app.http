@@ -23,7 +23,6 @@ Content-Type: application/json
 
 
 ### UPDATE MOVIE BY ID
-
 PATCH http://localhost:3000/movies/6b2b94fb-6174-11ef-b766-7cd30a82d48b
 Content-Type: application/json
 
@@ -32,7 +31,6 @@ Content-Type: application/json
 }
 
 ### DELETE MOVIE BY ID
-
 DELETE http://localhost:3000/movies/5bab9c92-617c-11ef-b766-7cd30a82d48b
 
 

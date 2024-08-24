@@ -31,17 +31,17 @@ export class MovieModel {
 
       // query to Movies_genre
       const [moviesWithGenres] = await connection.query(`
-        SELECT Movies.title, Movies.year, Movies.director, Movies.duration, Movies.poster, Movies.genre, Movies.rate, BIN_TO_UUID(Movies.id) as id 
-        FROM Movies 
-        JOIN Movies_genre ON Movies_genre.movie_id = Movies.id 
-        JOIN genre ON genre.id = Movies_genre.genre_id 
+        SELECT movies.title, movies.year, movies.director, movies.duration, movies.poster, movies.genre, movies.rate, BIN_TO_UUID(movies.id) as id 
+        FROM movies 
+        JOIN movies_genre ON movies_genre.movie_id = movies.id 
+        JOIN genre ON genre.id = movies_genre.genre_id 
         WHERE LOWER(genre.name) = ?;`
       , [lowCaseGenre])
 
       return moviesWithGenres
     }
 
-    const [movies] = await connection.query('SELECT title, year, director, duration, poster, genre, rate, BIN_TO_UUID(id) id FROM Movies;')
+    const [movies] = await connection.query('SELECT title, year, director, duration, poster, genre, rate, BIN_TO_UUID(id) id FROM movies;')
     return (movies)
   }
 
