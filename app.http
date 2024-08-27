@@ -74,8 +74,6 @@ Content-Type: application/json
 
 
 
-
-
 ### DELETE MOVIE BY ID
 DELETE http://localhost:3000/movies/d2084a07-622e-11ef-9eb1-7cd30a82d48b
 
