@@ -11,7 +11,7 @@ A RESTful API for managing movies. This API allows you to **get** movies, **add*
 
 ## 🌐 Live API
 
-Base URL: [TryHere](https://moviesapi-rest.up.railway.app/movies)
+Base URL: [TryHere](https://api-rest-chatonlive.up.railway.app/movies)
 
 ---
 
@@ -21,25 +21,25 @@ Base URL: [TryHere](https://moviesapi-rest.up.railway.app/movies)
 
 - **URL**: `/movies`
 - **Method**: `GET`
-- **Example**: [Get all movies](https://moviesapi-rest.up.railway.app/movies)
+- **Example**: [Get all movies](https://api-rest-chatonlive.up.railway.app/movies)
 
 
 ### 🎬 GET Movie by ID
 - **URL**: `/movies/:id`
 - **Method**: `GET`
-- **Example**: [Get movie by ID](https://moviesapi-rest.up.railway.app/movies/11d77af6-622e-11ef-a0a8-a2aa5758d06e)
+- **Example**: [Get movie by ID](https://api-rest-chatonlive.up.railway.app/movies/11d77af6-622e-11ef-a0a8-a2aa5758d06e)
 
 
 ### 🎭 GET Movies by Genre
 - **URL**: `/movies?genre=YOUR_GENRE`
 - **Method**: `GET`
-- **Example**: [Get movie by GENRE](https://moviesapi-rest.up.railway.app/movies?genre=action)
+- **Example**: [Get movie by GENRE](https://api-rest-chatonlive.up.railway.app/movies?genre=action)
 
 
 ### ➕ POST Add a New Movie
 - **URL**: `/movies`
 - **Method**: `POST`
-- **Example**: [Post new movies](https://moviesapi-rest.up.railway.app/movies) + the following payload:
+- **Example**: [Post new movies](https://api-rest-chatonlive.up.railway.app/movies) + the following payload:
 ```json
 {
     "title": "The Godfather",
@@ -56,7 +56,7 @@ Base URL: [TryHere](https://moviesapi-rest.up.railway.app/movies)
 ### ✏️ PATCH Update Partial Info
 - **URL**: `/movies/:id`
 - **Method**: `PATCH`
-- **Example**:[Post new data](https://moviesapi-rest.up.railway.app/movies/11d77af6-622e-11ef-a0a8-a2aa5758d06e) Update specific movie info by sending the following payload:
+- **Example**:[Post new data](https://api-rest-chatonlive.up.railway.app/movies/11d77af6-622e-11ef-a0a8-a2aa5758d06e) Update specific movie info by sending the following payload:
 
 ```json
 
