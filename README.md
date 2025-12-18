@@ -11,7 +11,7 @@ A RESTful API for managing movies. This API allows you to **get** movies, **add*
 
 ## 🌐 Live API
 
-Base URL: [TryHere](https://api-rest-chatonlive.up.railway.app/movies)
+Base URL: [TryHere](https://moviesapi-rest.up.railway.app/movies)
 
 ---
 
