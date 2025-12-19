@@ -56,7 +56,7 @@ Base URL: [TryHere](https://moviesapi-rest.up.railway.app/movies)
 ### ✏️ PATCH Update Partial Info
 - **URL**: `/movies/:id`
 - **Method**: `PATCH`
-- **Example**:[Post new data](https://api-rest-chatonlive.up.railway.app/movies/11d77af6-622e-11ef-a0a8-a2aa5758d06e) Update specific movie info by sending the following payload:
+- **Example**:[Post new data](https://moviesapi-rest.up.railway.app/movies/11d77af6-622e-11ef-a0a8-a2aa5758d06e) Update specific movie info by sending the following payload:
 
 ```json
 
